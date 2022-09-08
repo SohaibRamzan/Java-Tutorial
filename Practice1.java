@@ -1,4 +1,4 @@
-public class App {
+public class Practice1 {
     public static void main(String[] args) throws Exception {
         //self drive car using if-else statement
 
@@ -26,11 +26,8 @@ public class App {
         int age=0;
         boolean isStudent=false;
 
-        if(age <= 15){
-            ticketPrice=5;
-        }else if(age > 60){
-            ticketPrice=5;
-        }else if(isStudent){
+        if(age <= 15 || age>60 || isStudent){
+            
             ticketPrice=5;
         }
         System.out.println(ticketPrice);
