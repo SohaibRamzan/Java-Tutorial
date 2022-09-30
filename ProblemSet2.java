@@ -1,5 +1,3 @@
-import java.sql.Time;
-
 public class ProblemSet2 {
     
     public static void main(String[] args) throws Exception{
