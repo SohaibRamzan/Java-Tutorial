@@ -1,9 +1,17 @@
 public class Practice2 {
     
+    static boolean playButton;
+
+        public static void playMusic(){
+
+            if(playButton)System.out.println("Music is playing");
+            else System.out.println("Music is paused");
+
+        }
     public static void main(String[] args) throws Exception{
 
         //Coffee Machine using Switch Statements
-
+        playMusic();
         int passcode = 123;
         String coffeeType;
 
@@ -20,9 +28,15 @@ public class Practice2 {
         }
         System.out.println(coffeeType);
 
-        //soahibj hdsc
+        
 
+        
+        
+        
+
+        
 
     }
+    
 
 }
