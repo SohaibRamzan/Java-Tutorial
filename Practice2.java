@@ -34,6 +34,22 @@ public class Practice2 {
 
         }
 
+        ////////////// Liking Photo function ////////////////
+
+        
+        public static void likePhoto(int likeCount, String comment, boolean like ){
+
+            System.out.println("Comment : " + comment);
+            if(like) likeCount = likeCount + 1;
+
+            System.out.println("Likes : " + likeCount);
+
+        }
+
+
+
+
+
     public static void main(String[] args) throws Exception{
 
         
@@ -45,6 +61,9 @@ public class Practice2 {
 //// 2 ////
         printPhoto(30,40,true);
         printPhoto(25, 35, false);
+//// 3 ////
+        likePhoto(45,"Very Nice Picture",true);
+        likePhoto(45,"Nice Picture",false);
 
 
 
