@@ -19,14 +19,34 @@ public class Practice2 {
             else System.out.println("You are fit");
 
         }
+
+        ////////////// More Than One Parameters ////////////////
+
+        static boolean inColor;
+
+        public static void printPhoto(int height, int width, boolean inColor){
+
+            System.out.println("Height = "+ height);
+            System.out.println("Width = "+ width);
+
+            if(inColor) System.out.println("Photo is colorful");
+            else System.out.println("Photo is Black n white");
+
+        }
+
     public static void main(String[] args) throws Exception{
 
         
-
+//// 1 ////
         playMusic();
         weather(34);
         weather(55);
         weather(80);
+//// 2 ////
+        printPhoto(30,40,true);
+        printPhoto(25, 35, false);
+
+
 
         //Coffee Machine using Switch Statements
 
