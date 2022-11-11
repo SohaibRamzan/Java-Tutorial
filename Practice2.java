@@ -42,16 +42,17 @@ public class Practice2 {
         ////////////// Liking Photo function ////////////////
 
         
-        public static void likePhoto(int likeCount, String comment, boolean like ){
+        public static int likePhoto(int likeCount, String comment, boolean like ){
 
             System.out.println("Comment : " + comment);
             if(like) likeCount = likeCount + 1;
 
             System.out.println("Likes : " + likeCount);
 
+            return likeCount;
+
         }
-
-
+        
 
 
 
@@ -74,6 +75,12 @@ public class Practice2 {
         heading(4);
         likePhoto(45,"Very Nice Picture",true);
         likePhoto(45,"Nice Picture",false);
+//// 5 ////
+        heading(5);
+        int returnedlikes = likePhoto(45, "we return the likecount and equals them to returnedlikes", true);
+        System.out.println("Returned Likes : "+returnedlikes);
+        int totalLikes = likePhoto(returnedlikes, "we use the returnedLikes as a parameter of function for getting update likes and equals them to totalLikes", inColor);
+        System.out.println("Total Likes are "+totalLikes);
 
 
 
