@@ -1,4 +1,12 @@
 public class ProblemSet2 {
+
+    public static double makeChange(double itemCost, double dollarsProvided){
+    
+        double change = dollarsProvided - itemCost;
+        
+        return change;
+        
+    }
     
     public static void main(String[] args) throws Exception{
 
@@ -69,6 +77,12 @@ public class ProblemSet2 {
         }
             System.out.println(schedule);
 
+        /////////////////////////////////////////////////////////
+        
+        double totalChange = makeChange(10.55, 15);
+        int totalChangeInt = (int) totalChange;  /// this is called casting in which a variable type changed to another
+        System.out.println("Total Change = "+totalChangeInt);
+        
 
     }
   
