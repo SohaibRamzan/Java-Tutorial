@@ -2,6 +2,11 @@ public class Practice2 {
     
      static boolean playButton;
 
+
+        public static void heading(int num){
+            System.out.println("************ " + num + " ************");
+        }
+
         public static void playMusic(){
 
             if(playButton)System.out.println("Music is playing");
@@ -54,14 +59,19 @@ public class Practice2 {
 
         
 //// 1 ////
+        heading(1);
         playMusic();
+//// 2 ////     
+        heading(2);
         weather(34);
         weather(55);
         weather(80);
-//// 2 ////
+//// 3 ////
+        heading(3);
         printPhoto(30,40,true);
         printPhoto(25, 35, false);
-//// 3 ////
+//// 4 ////
+        heading(4);
         likePhoto(45,"Very Nice Picture",true);
         likePhoto(45,"Nice Picture",false);
 
